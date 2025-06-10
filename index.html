@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home - Medicinal Plants Research</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#0FFF50',secondary:'#1a1a1a'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bookman+Old+Style&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full glass z-50 px-6 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center">
+<span class="text-2xl font-bold text-white">CIRS BOTANICALS</span>
+</div>
+<div class="flex items-center space-x-8">
+<a href="#hero" class="nav-link text-white hover:text-primary transition-colors">Home</a>
+<a href="#explore" class="nav-link text-white hover:text-primary transition-colors">Explore</a>
+</div>
+<div class="flex items-center">
+<span class="text-xl font-bold text-white"><img src="logo.png" alt="CIRS Logo" id="logo_img"></span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section id="hero" class="relative min-h-screen flex items-center justify-center pt-16" style="background-image: url('home2.jpg'); background-size: cover; background-position: center;">
+<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h1 class="text-5xl md:text-6xl font-bold mb-6 neon-glow">Encounter the untamed beauty of our planet</h1>
+<p class="text-xl md:text-2xl mb-10 text-gray-200">Wandering through the rich tapestry of the flora and connecting with the green world.</p>
+<a href="#explore" class="neon-btn bg-primary text-black font-bold py-3 px-8 !rounded-button inline-block whitespace-nowrap">Explore Our Research</a>
+</div>
+</section>
+<!-- About Us Section -->
+<section id="about" class="py-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="glass rounded-lg overflow-hidden">
+<div class="flex flex-col md:flex-row">
+<div class="md:w-1/2">
+<img src="About us background.jpg" alt="Research Team" class="w-full h-full object-cover object-top">
+</div>
+<div class="md:w-1/2 p-8 md:p-12">
+<h2 class="text-3xl font-bold mb-6">About Our Research</h2>
+<p class="mb-4">This research is a collaborative science project of the students of the Chinmaya International Residential School's IB Diplomma Programme. We aim to develop an interest towards the rich tapestry of the flora around us. We have conducted long researches about these plants and we now present it to you. This website is for anyone who wishes to learn more about the plants in our campus.</p>
+<p class="mb-4">Our research focuses on identifying, documenting, and analyzing the medicinal properties of various plant species.</p>
+<p class="mb-4" id="webmadeby">Research by <a>CIRS IBDP students</a><br>Website by <a>Jishnu Teja Y</a></p>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<h2 id="witnessthefruits" class="text-4xl font-bold mb-12 text-center neon-glow">Witness the Fruits of our Research</h2>
+
+<!-- Featured Plants Section -->
+<section id="featured" class="py-20 px-6 bg-black bg-opacity-50">
+<div class="max-w-7xl mx-auto">
+<h2 class="text-4xl font-bold mb-12 text-center neon-glow">Featured Medicinal Plants</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Plant Card 1 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="redGinger">
+<img src="https://www.gardenia.net/wp-content/uploads/2025/05/shutterstock_1406062211-768x512.jpg" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Red Ginger</h3>
+<p>Known for its striking red flower bracts, Red Ginger has anti-inflammatory and antioxidant properties. It's used in traditional medicine to aid digestion and reduce inflammation.</p>
+</div>
+</div>
+<!-- Plant Card 2 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="peaceLily">
+<img src="https://www.gardenia.net/wp-content/uploads/2023/05/peace-lily-spathiphyllum-768x512.webp" alt="Peace Lily" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Peace Lily</h3>
+<p>Beyond its air-purifying abilities, Peace Lily contains compounds that can reduce airborne microbes. It's known to remove toxins like benzene, formaldehyde, and carbon monoxide from indoor environments.</p>
+</div>
+</div>
+<!-- Plant Card 3 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="spiderPlant">
+<img src="https://www.gardenia.net/wp-content/uploads/2023/05/chlorophytum-comosum-spider-plant-768x512.webp" alt="Spider Plant" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Spider Plant</h3>
+<p>A resilient air purifier that removes harmful chemicals like formaldehyde and xylene. Spider plants are also known to reduce stress and improve mental well-being when kept in living spaces.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Explore Section -->
+<section id="explore" class="py-20 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="glass rounded-lg p-8 md:p-12 mb-12">
+<h2 class="text-4xl font-bold mb-6 text-center neon-glow">Explore Our Plant Database</h2>
+<p class="text-center mb-8">Search our comprehensive database of medicinal plants documented through our research. Each entry includes scientific information and traditional medicinal uses.</p>
+<div class="max-w-2xl mx-auto relative mb-12">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none w-10 h-10">
+<i class="ri-search-line text-gray-400 text-xl"></i>
+</div>
+<input type="text" id="search-input" class="search-input w-full pl-10 pr-4 py-3 !rounded-button border-none focus:outline-none glass" placeholder="Search plants">
+</div>
+<div id="plants-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Plant Card 1 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="chineseBanyan">
+<img src="https://images.wigertsbonsai.com/wp-content/uploads/2022/10/21090856/IMG_2209-99.jpg" alt="Chinese Banyan" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Chinese Banyan</h3>
+<p>Known for its impressive aerial roots, the Chinese Banyan has anti-inflammatory properties. Its bark and leaves are used in traditional medicine to treat skin conditions and reduce fever.</p>
+</div>
+</div>
+<!-- Plant Card 2 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="zebraPlant">
+<img src="https://www.gardenia.net/wp-content/uploads/2023/05/calathea-zebrina-zebra-plant-768x512.webp" alt="Zebra Plant" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Zebra Plant</h3>
+<p>With its striking striped foliage, the Zebra Plant is known for its air-purifying qualities. It helps filter indoor air pollutants and is believed to have a calming effect on its surroundings.</p>
+</div>
+</div>
+<!-- Plant Card 3 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="waminBamboo">
+<img src="" alt="Wamin Bamboo" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Wamin Bamboo</h3>
+<p>This compact bamboo variety has anti-inflammatory properties. Its shoots are rich in nutrients and fiber, while extracts from its leaves are used in traditional medicine to treat respiratory conditions.</p>
+</div>
+</div>
+<!-- Plant Card 4 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="mingArabia">
+<img src="https://www.gardenia.net/wp-content/uploads/2023/05/polyscias-fruticosa-ming-aralia-768x512.webp" alt="Ming Arabia" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Ming Arabia</h3>
+<p>This elegant plant has adaptogenic properties that help reduce stress. Its extracts are used in traditional medicine to improve circulation and support respiratory health.</p>
+</div>
+</div>
+<!-- Plant Card 5 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="birdOfParadise">
+<img src="https://www.gardenia.net/wp-content/uploads/2023/05/strelitzia-reginae-bird-of-paradise-768x512.webp" alt="Bird of Paradise" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Bird of Paradise</h3>
+<p>With its striking flowers resembling exotic birds, this plant contains compounds with anti-inflammatory properties. In traditional medicine, its flower extracts are used to treat various skin conditions.</p>
+</div>
+</div>
+<!-- Plant Card 6 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="ashoka">
+<img src="https://www.gardenia.net/wp-content/uploads/2023/05/saraca-asoca-ashoka-tree-768x512.webp" alt="Ashoka" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Ashoka</h3>
+<p>Revered in Ayurvedic medicine, the Ashoka tree has powerful anti-inflammatory and antioxidant properties. Its bark is traditionally used to treat gynecological disorders and has shown effectiveness in managing pain.</p>
+</div>
+</div>
+<!-- Plant Card 7 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="asparagus">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Asparagus%20Fern%20with%20its%20feathery%20foliage%20against%20a%20dark%20background&width=600&height=400&seq=12&orientation=landscape" alt="Asparagus Fern" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Asparagus Fern</h3>
+<p>Despite its name, the Asparagus Fern is not a true fern but has medicinal properties. Its roots contain steroidal saponins that have anti-inflammatory effects, used to treat urinary tract infections.</p>
+</div>
+</div>
+<!-- Plant Card 8 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="ficusMicrocarpa">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Ficus%20Microcarpa%20with%20its%20glossy%20leaves%20and%20aerial%20roots%20against%20a%20dark%20background&width=600&height=400&seq=13&orientation=landscape" alt="Ficus Microcarpa" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Ficus Microcarpa</h3>
+<p>This ornamental tree has compounds with antimicrobial and anti-inflammatory properties. Its latex is used in traditional medicine to treat skin conditions and wounds.</p>
+</div>
+</div>
+<!-- Plant Card 9 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="indianLaurel">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Indian%20Laurel%20with%20its%20glossy%20leaves%20against%20a%20dark%20background&width=600&height=400&seq=14&orientation=landscape" alt="Indian Laurel" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Indian Laurel</h3>
+<p>Indian Laurel is known for its glossy leaves and medicinal properties. The leaves and bark contain compounds with antimicrobial and anti-inflammatory effects used to treat skin conditions.</p>
+</div>
+</div>
+<!-- Plant Card 10 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="coconutTree">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Coconut%20Tree%20fronds%20and%20fruit%20against%20a%20dark%20background&width=600&height=400&seq=15&orientation=landscape" alt="Coconut Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Coconut Tree</h3>
+<p>Every part of the coconut tree has medicinal value. Coconut water is rich in electrolytes and has antioxidant properties, while the oil contains medium-chain fatty acids with antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 11 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="ixoraTree">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Ixora%20Tree%20with%20its%20vibrant%20red%20flowers%20against%20a%20dark%20background&width=600&height=400&seq=16&orientation=landscape" alt="Ixora Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Ixora Tree</h3>
+<p>Ixora is known for its vibrant flowers and medicinal properties. It contains compounds with anti-inflammatory, antibacterial, and antioxidant effects used to treat fever and skin conditions.</p>
+</div>
+</div>
+<!-- Plant Card 12 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="kanakambaramTree">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Kanakambaram%20Tree%20with%20its%20orange%20flowers%20against%20a%20dark%20background&width=600&height=400&seq=17&orientation=landscape" alt="Kanakambaram Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Kanakambaram Tree</h3>
+<p>Kanakambaram is valued for its beautiful orange flowers and medicinal properties. The flowers and leaves contain compounds with anti-inflammatory and antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 13 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="peepalTree">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Peepal%20Tree%20with%20its%20distinctive%20heart-shaped%20leaves%20against%20a%20dark%20background&width=600&height=400&seq=18&orientation=landscape" alt="Peepal Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Peepal Tree</h3>
+<p>The sacred Peepal tree has numerous medicinal properties. Its bark, leaves, and fruits contain compounds with anti-inflammatory, antimicrobial, and antidiabetic effects.</p>
+</div>
+</div>
+<!-- Plant Card 14 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="dumbCane">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Dumb%20Cane%20with%20its%20variegated%20leaves%20against%20a%20dark%20background&width=600&height=400&seq=19&orientation=landscape" alt="Dumb Cane" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Dumb Cane</h3>
+<p>While toxic if ingested, Dumb Cane has medicinal properties when properly processed. It contains compounds with anti-inflammatory effects used topically to treat arthritis and muscle pain.</p>
+</div>
+</div>
+<!-- Plant Card 15 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="capeJasmine">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Cape%20Jasmine%20with%20its%20fragrant%20white%20flowers%20against%20a%20dark%20background&width=600&height=400&seq=20&orientation=landscape" alt="Cape Jasmine" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Cape Jasmine</h3>
+<p>Cape Jasmine is known for its fragrant white flowers and medicinal properties. It contains compounds with anti-inflammatory, antioxidant, and neuroprotective effects.</p>
+</div>
+</div>
+<!-- Plant Card 16 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="monkeyPotTree">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Monkey%20Pot%20Tree%20with%20its%20unique%20pot-like%20fruits%20against%20a%20dark%20background&width=600&height=400&seq=21&orientation=landscape" alt="Monkey Pot Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Monkey Pot Tree</h3>
+<p>The Monkey Pot Tree produces unique woody pot-like fruits and has medicinal properties. Its bark and seeds contain compounds with anti-inflammatory and antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 17 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="cigarBoxCedar">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Cigar-Box-Cedar%20with%20its%20distinctive%20bark%20and%20leaves%20against%20a%20dark%20background&width=600&height=400&seq=22&orientation=landscape" alt="Cigar-Box-Cedar" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Cigar-Box-Cedar</h3>
+<p>Cigar-Box-Cedar is valued for its aromatic wood and medicinal properties. The bark and leaves contain compounds with antimicrobial and anti-inflammatory effects.</p>
+</div>
+</div>
+<!-- Plant Card 18 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="mango">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Mango%20leaves%20and%20fruit%20against%20a%20dark%20background&width=600&height=400&seq=23&orientation=landscape" alt="Mango" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Mango</h3>
+<p>Beyond its delicious fruit, the mango tree has numerous medicinal properties. The leaves, bark, and kernel contain compounds with antioxidant, anti-inflammatory, and antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 19 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="weepingFig">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Weeping%20Fig%20with%20its%20drooping%20branches%20and%20glossy%20leaves%20against%20a%20dark%20background&width=600&height=400&seq=24&orientation=landscape" alt="Weeping Fig" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Weeping Fig</h3>
+<p>The Weeping Fig is known for its air-purifying abilities and medicinal properties. Its leaves and bark contain compounds with anti-inflammatory and antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 20 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="bushPentas">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Bush%20Pentas%20with%20its%20star-shaped%20flowers%20against%20a%20dark%20background&width=600&height=400&seq=25&orientation=landscape" alt="Bush Pentas" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Bush Pentas</h3>
+<p>Bush Pentas is valued for its colorful star-shaped flowers and medicinal properties. It contains compounds with anti-inflammatory and antioxidant effects.</p>
+</div>
+</div>
+<!-- Plant Card 21 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="purpleAllamanda">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Purple%20Allamanda%20with%20its%20trumpet-shaped%20purple%20flowers%20against%20a%20dark%20background&width=600&height=400&seq=26&orientation=landscape" alt="Purple Allamanda" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Purple Allamanda</h3>
+<p>Purple Allamanda is known for its trumpet-shaped flowers and medicinal properties. It contains compounds with anti-inflammatory and antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 22 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="crimsonBottlebrush">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Crimson%20Bottlebrush%20with%20its%20distinctive%20red%20flower%20spikes%20against%20a%20dark%20background&width=600&height=400&seq=27&orientation=landscape" alt="Crimson Bottlebrush" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Crimson Bottlebrush</h3>
+<p>Crimson Bottlebrush is valued for its distinctive red flower spikes and medicinal properties. It contains essential oils with antimicrobial and anti-inflammatory effects.</p>
+</div>
+</div>
+<!-- Plant Card 23 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="goldenShower">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Golden%20Shower%20tree%20with%20its%20cascading%20yellow%20flowers%20against%20a%20dark%20background&width=600&height=400&seq=28&orientation=landscape" alt="Golden Shower" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Golden Shower</h3>
+<p>Golden Shower is known for its cascading yellow flowers and medicinal properties. Its bark, leaves, and fruits contain compounds with anti-inflammatory and antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 24 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="gingerTree">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Ginger%20Tree%20with%20its%20distinctive%20foliage%20against%20a%20dark%20background&width=600&height=400&seq=29&orientation=landscape" alt="Ginger Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Ginger Tree</h3>
+<p>The Ginger Tree is valued for its aromatic rhizomes and medicinal properties. It contains gingerols and shogaols with anti-inflammatory, antimicrobial, and antiemetic effects.</p>
+</div>
+</div>
+<!-- Plant Card 25 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="yucca">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Yucca%20plant%20with%20its%20sword-like%20leaves%20against%20a%20dark%20background&width=600&height=400&seq=30&orientation=landscape" alt="Yucca" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Yucca</h3>
+<p>Yucca is known for its sword-like leaves and medicinal properties. It contains saponins and resveratrol with anti-inflammatory and antioxidant effects used to treat arthritis.</p>
+</div>
+</div>
+<!-- Plant Card 26 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="rholo">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Rholo%20plant%20with%20its%20distinctive%20purple%20and%20green%20leaves%20against%20a%20dark%20background&width=600&height=400&seq=31&orientation=landscape" alt="Rholo" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Rholo</h3>
+<p>Rholo, also known as Moses-in-the-Cradle, has distinctive purple and green leaves with medicinal properties. It contains compounds with anti-inflammatory and antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 27 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="coleus">
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20Coleus%20plant%20with%20its%20colorful%20variegated%20leaves%20against%20a%20dark%20background&width=600&height=400&seq=32&orientation=landscape" alt="Coleus" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Coleus</h3>
+<p>Coleus is valued for its colorful foliage and medicinal properties. It contains compounds with anti-inflammatory, antioxidant, and antimicrobial effects used to treat various ailments.</p>
+</div>
+</div>
+<!-- Plant Card 28 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="africanTulipTree">
+<img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?q=80&w=600&h=400&auto=format&fit=crop" alt="African Tulip Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">African Tulip Tree</h3>
+<p>The African Tulip Tree is known for its vibrant orange-red flowers and medicinal properties. Its bark and leaves contain compounds with anti-inflammatory and antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 29 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="australianPine">
+<img src="https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Australian Pine" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Australian Pine</h3>
+<p>Australian Pine has needle-like branchlets and medicinal properties. Its bark contains compounds with astringent and antiseptic effects used to treat wounds and skin conditions.</p>
+</div>
+</div>
+<!-- Plant Card 30 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="bakulTree">
+<img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=600&h=400&auto=format&fit=crop" alt="Bakul Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Bakul Tree</h3>
+<p>The Bakul Tree is valued for its fragrant flowers and medicinal properties. Its bark, flowers, and fruits contain compounds with antimicrobial and anti-inflammatory effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 31 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="barbadosLily">
+<img src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Barbados Lily" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Barbados Lily</h3>
+<p>Barbados Lily is known for its striking red flowers and medicinal properties. The bulb contains alkaloids with anti-inflammatory and analgesic effects, traditionally used to treat arthritis and rheumatism.</p>
+</div>
+</div>
+<!-- Plant Card 32 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="blueLobsterClaw">
+<img src="https://images.unsplash.com/photo-1597083722386-a4d03a36cc6e?q=80&w=600&h=400&auto=format&fit=crop" alt="Blue Lobster Claw" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Blue Lobster Claw</h3>
+<p>Blue Lobster Claw is valued for its distinctive blue flowers and medicinal properties. Its leaves and flowers contain compounds with anti-inflammatory and antimicrobial effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 33 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="bougainville">
+<img src="https://images.pexels.com/photos/2058498/pexels-photo-2058498.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Bougainville" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Bougainville</h3>
+<p>Bougainville is known for its vibrant colorful bracts and medicinal properties. Its leaves and flowers contain compounds with anti-inflammatory and antioxidant effects used to treat various ailments.</p>
+</div>
+</div>
+<!-- Plant Card 34 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="broadleafPalm">
+<img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=600&h=400&auto=format&fit=crop" alt="Broadleaf Palm" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Broadleaf Palm</h3>
+<p>Broadleaf Palm is valued for its large distinctive leaves and medicinal properties. Its leaves and roots contain compounds with anti-inflammatory and diuretic effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 35 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="cannonballTree">
+<img src="https://images.pexels.com/photos/4344260/pexels-photo-4344260.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Cannonball Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Cannonball Tree</h3>
+<p>The Cannonball Tree produces large spherical fruits and has medicinal properties. Its bark, leaves, and fruits contain compounds with antimicrobial and anti-inflammatory effects used to treat various conditions.</p>
+</div>
+</div>
+<!-- Plant Card 36 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="chinesePeanut">
+<img src="https://images.unsplash.com/photo-1567892737950-30c4db37cd89?q=80&w=600&h=400&auto=format&fit=crop" alt="Chinese Peanut" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Chinese Peanut</h3>
+<p>Chinese Peanut is known for its nutritional value and medicinal properties. The seeds contain compounds with antioxidant and anti-inflammatory effects used to support heart health and immune function.</p>
+</div>
+</div>
+<!-- Plant Card 37 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="cookPine">
+<img src="https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Cook Pine" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Cook Pine</h3>
+<p>Cook Pine is valued for its tall, straight growth and medicinal properties. Its bark and needles contain compounds with antimicrobial and expectorant effects used to treat respiratory conditions.</p>
+</div>
+</div>
+<!-- Plant Card 38 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="copperLeafPlant">
+<img src="https://images.unsplash.com/photo-1596392301391-8a8641869d91?q=80&w=600&h=400&auto=format&fit=crop" alt="Copper Leaf Plant" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Copper Leaf Plant</h3>
+<p>Copper Leaf Plant is known for its colorful foliage and medicinal properties. Its leaves contain compounds with anti-inflammatory and antimicrobial effects used to treat various skin conditions.</p>
+</div>
+</div>
+<!-- Plant Card 39 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="cypress">
+<img src="https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Cypress" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Cypress</h3>
+<p>Cypress is valued for its aromatic wood and medicinal properties. Its leaves and cones contain compounds with antimicrobial and astringent effects used to treat respiratory conditions and improve circulation.</p>
+</div>
+</div>
+<!-- Plant Card 40 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="dwarfUmbrella">
+<img src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=600&h=400&auto=format&fit=crop" alt="Dwarf Umbrella Plant" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Dwarf Umbrella Plant</h3>
+<p>Dwarf Umbrella Plant is known for its umbrella-like leaf arrangement and medicinal properties. Its leaves contain compounds with anti-inflammatory and antioxidant effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 41 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="dwarfWhiteBauhinia">
+<img src="https://images.pexels.com/photos/1381679/pexels-photo-1381679.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Dwarf White Bauhinia" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Dwarf White Bauhinia</h3>
+<p>Dwarf White Bauhinia is valued for its white butterfly-like flowers and medicinal properties. Its leaves and bark contain compounds with anti-inflammatory and antimicrobial effects used to treat various conditions.</p>
+</div>
+</div>
+<!-- Plant Card 42 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="falseAshoka">
+<img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=600&h=400&auto=format&fit=crop" alt="False Ashoka" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">False Ashoka</h3>
+<p>False Ashoka is known for its columnar growth and medicinal properties. Its bark and leaves contain compounds with anti-inflammatory and antimicrobial effects used in traditional medicine to treat various ailments.</p>
+</div>
+</div>
+<!-- Plant Card 43 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="fireBush">
+<img src="https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Fire Bush" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Fire Bush</h3>
+<p>Fire Bush is valued for its vibrant red-orange flowers and medicinal properties. Its leaves and flowers contain compounds with anti-inflammatory and antimicrobial effects used to treat various conditions.</p>
+</div>
+</div>
+<!-- Plant Card 44 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="foxtailPalm">
+<img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=600&h=400&auto=format&fit=crop" alt="Foxtail Palm" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Foxtail Palm</h3>
+<p>Foxtail Palm is known for its bushy, fox-tail-like fronds and medicinal properties. Its fruits and seeds contain compounds with antioxidant and anti-inflammatory effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 45 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="geranium">
+<img src="https://images.pexels.com/photos/4507711/pexels-photo-4507711.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Geranium" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Geranium</h3>
+<p>Geranium is valued for its colorful flowers and medicinal properties. Its leaves and flowers contain essential oils with antimicrobial and anti-inflammatory effects used to treat various conditions.</p>
+</div>
+</div>
+<!-- Plant Card 46 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="cubanPinkTrumpet">
+<img src="https://images.unsplash.com/photo-1555420087-7b6d088a3d48?q=80&w=600&h=400&auto=format&fit=crop" alt="Cuban Pink Trumpet Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Cuban Pink Trumpet Tree</h3>
+<p>Cuban Pink Trumpet Tree is known for its beautiful pink trumpet-shaped flowers and medicinal properties. Its bark and leaves contain compounds with anti-inflammatory and antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 47 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="goldenDewDrops">
+<img src="https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Golden Dew Drops" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Golden Dew Drops</h3>
+<p>Golden Dew Drops is valued for its clusters of purple flowers and golden berries. Its leaves and berries contain compounds with antimalarial and antimicrobial properties used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 48 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="goldenTrumpet">
+<img src="https://images.unsplash.com/photo-1555420087-7b6d088a3d48?q=80&w=600&h=400&auto=format&fit=crop" alt="Golden Trumpet" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Golden Trumpet</h3>
+<p>Golden Trumpet is known for its bright yellow trumpet-shaped flowers and medicinal properties. Its bark and leaves contain compounds with anti-inflammatory and antimicrobial effects.</p>
+</div>
+</div>
+<!-- Plant Card 49 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="guava">
+<img src="https://images.unsplash.com/photo-1536511132770-e5058c7e8c46?q=80&w=600&h=400&auto=format&fit=crop" alt="Guava" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Guava</h3>
+<p>Guava is valued for its nutritious fruits and medicinal properties. Its leaves, bark, and fruits contain compounds with antioxidant and antimicrobial effects used to treat various conditions.</p>
+</div>
+</div>
+<!-- Plant Card 50 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="hawaiianSandalwood">
+<img src="https://images.pexels.com/photos/1072824/pexels-photo-1072824.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Hawaiian Sandalwood" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Hawaiian Sandalwood</h3>
+<p>Hawaiian Sandalwood is known for its aromatic wood and medicinal properties. Its heartwood contains essential oils with antimicrobial and anti-inflammatory effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 51 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="indianGooseberry">
+<img src="https://images.unsplash.com/photo-1610508500445-a4592435e27e?q=80&w=600&h=400&auto=format&fit=crop" alt="Indian Gooseberry" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Indian Gooseberry</h3>
+<p>Indian Gooseberry is valued for its nutrient-rich fruits and medicinal properties. Its fruits contain high levels of vitamin C and antioxidants used to boost immunity and promote overall health.</p>
+</div>
+</div>
+<!-- Plant Card 52 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="karanj">
+<img src="https://images.pexels.com/photos/1459495/pexels-photo-1459495.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Karanj" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Karanj</h3>
+<p>Karanj is known for its medicinal properties. Its seeds, leaves, and bark contain compounds with antimicrobial, anti-inflammatory, and antidiabetic effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 53 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="mangroveLily">
+<img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?q=80&w=600&h=400&auto=format&fit=crop" alt="Mangrove Lily" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Mangrove Lily</h3>
+<p>Mangrove Lily is valued for its beautiful flowers and medicinal properties. Its bulbs and flowers contain compounds with anti-inflammatory and antimicrobial effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 54 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="montereyCypress">
+<img src="https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Monterey Cypress" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Monterey Cypress</h3>
+<p>Monterey Cypress is known for its distinctive shape and medicinal properties. Its leaves and cones contain compounds with antimicrobial and expectorant effects used to treat respiratory conditions.</p>
+</div>
+</div>
+<!-- Plant Card 55 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="mountainEbony">
+<img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=600&h=400&auto=format&fit=crop" alt="Mountain Ebony" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Mountain Ebony</h3>
+<p>Mountain Ebony is valued for its beautiful flowers and medicinal properties. Its bark, leaves, and flowers contain compounds with anti-inflammatory and antimicrobial effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 56 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="neemTree">
+<img src="https://images.pexels.com/photos/1459495/pexels-photo-1459495.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Neem Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Neem Tree</h3>
+<p>Neem Tree is known for its powerful medicinal properties. Every part of the tree contains compounds with antimicrobial, anti-inflammatory, and antifungal effects used to treat various conditions.</p>
+</div>
+</div>
+<!-- Plant Card 57 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="orangeJasmine">
+<img src="https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Orange Jasmine" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Orange Jasmine</h3>
+<p>Orange Jasmine is valued for its fragrant flowers and medicinal properties. Its leaves and flowers contain compounds with antimicrobial and anti-inflammatory effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 58 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="periwinkle">
+<img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?q=80&w=600&h=400&auto=format&fit=crop" alt="Periwinkle" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Periwinkle</h3>
+<p>Periwinkle is known for its medicinal properties. Its leaves and flowers contain alkaloids with anticancer, antidiabetic, and antihypertensive effects used in modern and traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 59 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="prideOfBarbados">
+<img src="https://images.pexels.com/photos/2058498/pexels-photo-2058498.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Pride of Barbados" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Pride of Barbados</h3>
+<p>Pride of Barbados is valued for its vibrant flowers and medicinal properties. Its leaves, flowers, and seeds contain compounds with antimicrobial and anti-inflammatory effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 60 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="queensCapeMyrtle">
+<img src="https://images.unsplash.com/photo-1555420087-7b6d088a3d48?q=80&w=600&h=400&auto=format&fit=crop" alt="Queens Cape Myrtle" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Queens Cape Myrtle</h3>
+<p>Queens Cape Myrtle is known for its beautiful flowers and medicinal properties. Its bark and leaves contain compounds with antimicrobial and anti-inflammatory effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 61 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="ribbonGrass">
+<img src="https://images.unsplash.com/photo-1620127252536-03bdfcb67c86?q=80&w=600&h=400&auto=format&fit=crop" alt="Ribbon Grass" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Ribbon Grass</h3>
+<p>Ribbon Grass is valued for its striped foliage and medicinal properties. Its leaves contain compounds with diuretic and anti-inflammatory effects used in traditional medicine to treat various conditions.</p>
+</div>
+</div>
+<!-- Plant Card 62 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="siris">
+<img src="https://images.pexels.com/photos/1459495/pexels-photo-1459495.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Siris" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Siris</h3>
+<p>Siris is known for its medicinal properties. Its bark, leaves, and seeds contain compounds with antimicrobial, anti-inflammatory, and anthelmintic effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 63 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="smoothAgave">
+<img src="https://images.unsplash.com/photo-1509223197845-458d87318791?q=80&w=600&h=400&auto=format&fit=crop" alt="Smooth Agave" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Smooth Agave</h3>
+<p>Smooth Agave is valued for its medicinal properties. Its leaves and sap contain compounds with anti-inflammatory and antimicrobial effects used to treat wounds, burns, and digestive disorders.</p>
+</div>
+</div>
+<!-- Plant Card 64 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="teakTree">
+<img src="https://images.pexels.com/photos/1459495/pexels-photo-1459495.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Teak Tree" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Teak Tree</h3>
+<p>Teak Tree is known for its valuable wood and medicinal properties. Its leaves and bark contain compounds with antimicrobial, anti-inflammatory, and diuretic effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 65 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="whiteFrangipani">
+<img src="https://images.unsplash.com/photo-1591854306244-a08a8e3a2f6a?q=80&w=600&h=400&auto=format&fit=crop" alt="White Frangipani" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">White Frangipani</h3>
+<p>White Frangipani is valued for its fragrant flowers and medicinal properties. Its flowers, bark, and latex contain compounds with anti-inflammatory and antimicrobial effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 66 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="wildCrapemyrtle">
+<img src="https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?w=600&h=400&auto=compress&cs=tinysrgb" alt="Wild Crapemyrtle" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Wild Crapemyrtle</h3>
+<p>Wild Crapemyrtle is known for its beautiful flowers and medicinal properties. Its bark, leaves, and flowers contain compounds with antimicrobial and anti-inflammatory effects used in traditional medicine.</p>
+</div>
+</div>
+<!-- Plant Card 67 -->
+<div class="plant-card glass rounded-lg overflow-hidden cursor-pointer" data-plant="yellowBells">
+<img src="https://images.unsplash.com/photo-1555420087-7b6d088a3d48?q=80&w=600&h=400&auto=format&fit=crop" alt="Yellow Bells" class="w-full h-64 object-cover object-top">
+<div class="p-6">
+<h3 class="text-2xl font-bold mb-2">Yellow Bells</h3>
+<p>Yellow Bells is valued for its bright yellow trumpet-shaped flowers and medicinal properties. Its leaves and flowers contain compounds with antimicrobial and anti-inflammatory effects used in traditional medicine.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Modal for Plant Details -->
+<div id="plant-modal" class="modal fixed inset-0 z-50 flex items-center justify-center px-4">
+<div class="absolute inset-0 bg-black bg-opacity-80" id="modal-overlay"></div>
+<div class="relative glass rounded-lg max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+<div class="p-6 md:p-8">
+<button id="close-modal" class="absolute top-4 right-4 text-gray-300 hover:text-white">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-close-line ri-xl"></i>
+</div>
+</button>
+<div id="modal-content" class="pt-4">
+<!-- Content will be dynamically inserted here -->
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<footer class="glass py-8 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-4 md:mb-0">
+<p>&copy; 2025 Medicinal Plants Research Project</p>
+</div>
+<div class="text-center mb-4 md:mb-0">
+<p>Website made by Jishnu Teja Y</p>
+</div>
+<div>
+<a href="https://cirschool.org" target="_blank" class="text-primary hover:underline">cirschool.org</a>
+</div>
+</div>
+</div>
+</footer>
+<script id="plant-data-script">
+// Plant database with detailed information
+const plantData = {
+africanTulipTree: {
+name: "African Tulip Tree",
+scientific: "Spathodea campanulata",
+tamil: "அப்ரிக்க டியூலிப் மரம் (Africa Tulip Maram)",
+properties: "The African Tulip Tree is known for its vibrant orange-red flowers and medicinal properties. Its bark and leaves contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat kidney diseases, urethral inflammation, and as a diuretic. The flowers are used to treat skin diseases and wounds."
+},
+australianPine: {
+name: "Australian Pine",
+scientific: "Casuarina equisetifolia",
+tamil: "சவுக்கு மரம் (Savukku Maram)",
+properties: "Australian Pine has needle-like branchlets and medicinal properties. Its bark contains compounds with astringent and antiseptic effects. In traditional medicine, it's used to treat chronic diarrhea, dysentery, and nervous disorders. The bark extract is also applied to wounds and skin conditions."
+},
+bakulTree: {
+name: "Bakul Tree",
+scientific: "Mimusops elengi",
+tamil: "மகிழம் (Magilam)",
+properties: "The Bakul Tree is valued for its fragrant flowers and medicinal properties. Its bark, flowers, and fruits contain compounds with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat dental ailments, gum diseases, and various skin conditions. The flowers are used in aromatherapy for their calming effects."
+},
+barbadosLily: {
+name: "Barbados Lily",
+scientific: "Hippeastrum puniceum",
+tamil: "பார்படோஸ் லில்லி (Barbados Lilly)",
+properties: "Barbados Lily is known for its striking red flowers and medicinal properties. The bulb contains alkaloids with anti-inflammatory and analgesic effects. In traditional medicine, it's used to treat arthritis, rheumatism, and wounds. The bulb extract is also used as an emetic and expectorant in controlled doses."
+},
+blueLobsterClaw: {
+name: "Blue Lobster Claw",
+scientific: "Heliconia psittacorum",
+tamil: "நீல இறால் கை (Neela Iral Kai)",
+properties: "Blue Lobster Claw is valued for its distinctive blue flowers and medicinal properties. Its leaves and flowers contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat respiratory conditions, fever, and skin infections. The plant also has astringent properties beneficial for wound healing."
+},
+bougainville: {
+name: "Bougainville",
+scientific: "Bougainvillea spectabilis",
+tamil: "காகிதப்பூ (Kagithapoo)",
+properties: "Bougainville is known for its vibrant colorful bracts and medicinal properties. Its leaves and flowers contain compounds with anti-inflammatory and antioxidant effects. In traditional medicine, it's used to treat cough, sore throat, and liver problems. The plant also has antidiabetic properties and is used to lower blood sugar levels."
+},
+broadleafPalm: {
+name: "Broadleaf Palm",
+scientific: "Licuala grandis",
+tamil: "அகல இலை பனை (Agala Ilai Panai)",
+properties: "Broadleaf Palm is valued for its large distinctive leaves and medicinal properties. Its leaves and roots contain compounds with anti-inflammatory and diuretic effects. In traditional medicine, it's used to treat urinary tract infections, kidney stones, and edema. The leaves are also used topically to treat skin conditions and wounds."
+},
+cannonballTree: {
+name: "Cannonball Tree",
+scientific: "Couroupita guianensis",
+tamil: "நாகலிங்கம் (Nagalingam)",
+properties: "The Cannonball Tree produces large spherical fruits and has medicinal properties. Its bark, leaves, and fruits contain compounds with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat cold, stomach ache, skin diseases, and bleeding disorders. The flowers are used to treat hypertension and pain."
+},
+chinesePeanut: {
+name: "Chinese Peanut",
+scientific: "Arachis hypogaea",
+tamil: "சீன நிலக்கடலை (Cheena Nilakadalai)",
+properties: "Chinese Peanut is known for its nutritional value and medicinal properties. The seeds contain compounds with antioxidant and anti-inflammatory effects. In traditional medicine, it's used to support heart health, immune function, and brain health. The oil is used topically to treat skin conditions and promote wound healing."
+},
+cookPine: {
+name: "Cook Pine",
+scientific: "Araucaria columnaris",
+tamil: "குக் பைன் (Cook Pine)",
+properties: "Cook Pine is valued for its tall, straight growth and medicinal properties. Its bark and needles contain compounds with antimicrobial and expectorant effects. In traditional medicine, it's used to treat respiratory conditions, coughs, and bronchitis. The resin is used topically to treat wounds and skin infections."
+},
+copperLeafPlant: {
+name: "Copper Leaf Plant",
+scientific: "Acalypha wilkesiana",
+tamil: "செம்பு இலை செடி (Sembu Ilai Sedi)",
+properties: "Copper Leaf Plant is known for its colorful foliage and medicinal properties. Its leaves contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat various skin conditions, digestive disorders, and respiratory ailments. The leaf extract is also used to lower blood pressure and blood sugar levels."
+},
+cypress: {
+name: "Cypress",
+scientific: "Cupressus sempervirens",
+tamil: "சைப்ரஸ் மரம் (Cypress Maram)",
+properties: "Cypress is valued for its aromatic wood and medicinal properties. Its leaves and cones contain compounds with antimicrobial and astringent effects. In traditional medicine, it's used to treat respiratory conditions, improve circulation, and reduce varicose veins. The essential oil is used in aromatherapy to relieve stress and anxiety."
+},
+dwarfUmbrella: {
+name: "Dwarf Umbrella Plant",
+scientific: "Schefflera arboricola",
+tamil: "குட்டை குடை செடி (Kuttai Kudai Sedi)",
+properties: "Dwarf Umbrella Plant is known for its umbrella-like leaf arrangement and medicinal properties. Its leaves contain compounds with anti-inflammatory and antioxidant effects. In traditional medicine, it's used to treat arthritis, rheumatism, and digestive disorders. The leaf extract is also used topically to treat skin conditions and wounds."
+},
+dwarfWhiteBauhinia: {
+name: "Dwarf White Bauhinia",
+scientific: "Bauhinia acuminata",
+tamil: "வெள்ளை மந்தாரை (Vellai Mantharai)",
+properties: "Dwarf White Bauhinia is valued for its white butterfly-like flowers and medicinal properties. Its leaves and bark contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat various conditions including diabetes, skin diseases, and digestive disorders. The flower extract is used to treat respiratory conditions."
+},
+falseAshoka: {
+name: "False Ashoka",
+scientific: "Polyalthia longifolia",
+tamil: "நெட்டிலிங்கம் (Nettilingam)",
+properties: "False Ashoka is known for its columnar growth and medicinal properties. Its bark and leaves contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat fever, skin diseases, diabetes, and hypertension. The bark extract is also used to treat helminthiasis and as a febrifuge."
+},
+fireBush: {
+name: "Fire Bush",
+scientific: "Hamelia patens",
+tamil: "நெருப்பு புதர் (Neruppu Puthar)",
+properties: "Fire Bush is valued for its vibrant red-orange flowers and medicinal properties. Its leaves and flowers contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat skin conditions, insect bites, and wounds. The leaf extract is also used to reduce fever and relieve pain."
+},
+foxtailPalm: {
+name: "Foxtail Palm",
+scientific: "Wodyetia bifurcata",
+tamil: "நரிவால் பனை (Narival Panai)",
+properties: "Foxtail Palm is known for its bushy, fox-tail-like fronds and medicinal properties. Its fruits and seeds contain compounds with antioxidant and anti-inflammatory effects. In traditional medicine, it's used to treat digestive disorders, skin conditions, and to boost the immune system. The seed oil is used topically to treat various skin ailments."
+},
+geranium: {
+name: "Geranium",
+scientific: "Pelargonium graveolens",
+tamil: "ஜெரேனியம் (Jeraniyam)",
+properties: "Geranium is valued for its colorful flowers and medicinal properties. Its leaves and flowers contain essential oils with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat anxiety, depression, and various skin conditions. The essential oil is also used in aromatherapy to balance hormones and improve circulation."
+},
+cubanPinkTrumpet: {
+name: "Cuban Pink Trumpet Tree",
+scientific: "Tabebuia pallida",
+tamil: "கியூப நுரை எக்காளம் (Cuba Nurai Ekkalam)",
+properties: "Cuban Pink Trumpet Tree is known for its beautiful pink trumpet-shaped flowers and medicinal properties. Its bark and leaves contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat fever, infections, and various inflammatory conditions. The bark extract is also used as an immune system booster."
+},
+goldenDewDrops: {
+name: "Golden Dew Drops",
+scientific: "Duranta erecta",
+tamil: "பொன் பனித்துளி (Pon Panithuli)",
+properties: "Golden Dew Drops is valued for its clusters of purple flowers and golden berries. Its leaves and berries contain compounds with antimalarial and antimicrobial properties. In traditional medicine, it's used to treat malaria, intestinal worms, and skin infections. However, the berries are toxic if ingested in large quantities."
+},
+goldenTrumpet: {
+name: "Golden Trumpet",
+scientific: "Allamanda cathartica",
+tamil: "பொன் எக்காளம் (Pon Ekkalam)",
+properties: "Golden Trumpet is known for its bright yellow trumpet-shaped flowers and medicinal properties. Its bark and leaves contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used as a cathartic, emetic, and to treat liver disorders. All parts of the plant contain latex that has purgative properties."
+},
+guava: {
+name: "Guava",
+scientific: "Psidium guajava",
+tamil: "கொய்யா (Koiya)",
+properties: "Guava is valued for its nutritious fruits and medicinal properties. Its leaves, bark, and fruits contain compounds with antioxidant and antimicrobial effects. In traditional medicine, it's used to treat diarrhea, diabetes, cough, and various skin conditions. The leaves are particularly rich in antioxidants and have been shown to have antimicrobial activity."
+},
+hawaiianSandalwood: {
+name: "Hawaiian Sandalwood",
+scientific: "Santalum ellipticum",
+tamil: "ஹவாய் சந்தனம் (Hawaii Santhanam)",
+properties: "Hawaiian Sandalwood is known for its aromatic wood and medicinal properties. Its heartwood contains essential oils with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat skin conditions, urinary tract infections, and as a cooling agent for the body. The essential oil is also used in aromatherapy for its calming effects."
+},
+indianGooseberry: {
+name: "Indian Gooseberry",
+scientific: "Phyllanthus emblica",
+tamil: "நெல்லிக்காய் (Nellikkai)",
+properties: "Indian Gooseberry is valued for its nutrient-rich fruits and medicinal properties. Its fruits contain high levels of vitamin C and antioxidants. In traditional medicine, it's used to boost immunity, improve digestion, treat diabetes, and promote longevity. It's also used in hair and skin care for its rejuvenating properties."
+},
+karanj: {
+name: "Karanj",
+scientific: "Pongamia pinnata",
+tamil: "புங்கம் (Pungam)",
+properties: "Karanj is known for its medicinal properties. Its seeds, leaves, and bark contain compounds with antimicrobial, anti-inflammatory, and antidiabetic effects. In traditional medicine, it's used to treat skin diseases, rheumatism, and diabetes. The oil extracted from the seeds is used topically to treat various skin conditions."
+},
+mangroveLily: {
+name: "Mangrove Lily",
+scientific: "Crinum asiaticum",
+tamil: "விஷ வெங்காயம் (Visha Vengayam)",
+properties: "Mangrove Lily is valued for its beautiful flowers and medicinal properties. Its bulbs and flowers contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat rheumatism, ear infections, and as an emetic. The bulb extract is also used topically to treat boils and skin infections."
+},
+montereyCypress: {
+name: "Monterey Cypress",
+scientific: "Cupressus macrocarpa",
+tamil: "மாண்டரே சைப்ரஸ் (Monterey Cypress)",
+properties: "Monterey Cypress is known for its distinctive shape and medicinal properties. Its leaves and cones contain compounds with antimicrobial and expectorant effects. In traditional medicine, it's used to treat respiratory conditions, coughs, and bronchitis. The essential oil is also used in aromatherapy to relieve stress and anxiety."
+},
+mountainEbony: {
+name: "Mountain Ebony",
+scientific: "Bauhinia variegata",
+tamil: "மந்தாரை (Mantharai)",
+properties: "Mountain Ebony is valued for its beautiful flowers and medicinal properties. Its bark, leaves, and flowers contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat skin diseases, ulcers, and digestive disorders. The bark extract is also used to treat diabetes and various inflammatory conditions."
+},
+neemTree: {
+name: "Neem Tree",
+scientific: "Azadirachta indica",
+tamil: "வேம்பு (Vembu)",
+properties: "Neem Tree is known for its powerful medicinal properties. Every part of the tree contains compounds with antimicrobial, anti-inflammatory, and antifungal effects. In traditional medicine, it's used to treat skin diseases, diabetes, malaria, and various infections. The oil is used in cosmetics and as a natural pesticide."
+},
+orangeJasmine: {
+name: "Orange Jasmine",
+scientific: "Murraya paniculata",
+tamil: "கத்தூரி வெங்காயம் (Kathoori Vengayam)",
+properties: "Orange Jasmine is valued for its fragrant flowers and medicinal properties. Its leaves and flowers contain compounds with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat diarrhea, toothache, and various skin conditions. The essential oil is also used in aromatherapy for its calming effects."
+},
+periwinkle: {
+name: "Periwinkle",
+scientific: "Catharanthus roseus",
+tamil: "நித்யகல்யாணி (Nithyakalyani)",
+properties: "Periwinkle is known for its medicinal properties. Its leaves and flowers contain alkaloids with anticancer, antidiabetic, and antihypertensive effects. In modern medicine, compounds from periwinkle are used to treat certain types of cancer. In traditional medicine, it's used to treat diabetes, hypertension, and various skin conditions."
+},
+prideOfBarbados: {
+name: "Pride of Barbados",
+scientific: "Caesalpinia pulcherrima",
+tamil: "மயிர்கொன்றை (Mayirkonrai)",
+properties: "Pride of Barbados is valued for its vibrant flowers and medicinal properties. Its leaves, flowers, and seeds contain compounds with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat fever, respiratory conditions, and as an abortifacient. The root extract is used to treat various skin conditions."
+},
+queensCapeMyrtle: {
+name: "Queens Cape Myrtle",
+scientific: "Lagerstroemia speciosa",
+tamil: "புளி மரம் (Puli Maram)",
+properties: "Queens Cape Myrtle is known for its beautiful flowers and medicinal properties. Its bark and leaves contain compounds with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat diabetes, kidney diseases, and various skin conditions. The leaf extract has been shown to have antidiabetic and antiobesity effects."
+},
+ribbonGrass: {
+name: "Ribbon Grass",
+scientific: "Phalaris arundinacea",
+tamil: "ரிப்பன் புல் (Ribbon Pul)",
+properties: "Ribbon Grass is valued for its striped foliage and medicinal properties. Its leaves contain compounds with diuretic and anti-inflammatory effects. In traditional medicine, it's used to treat urinary tract infections, kidney stones, and various inflammatory conditions. The plant extract is also used topically to treat skin conditions."
+},
+siris: {
+name: "Siris",
+scientific: "Albizia lebbeck",
+tamil: "வாகை (Vagai)",
+properties: "Siris is known for its medicinal properties. Its bark, leaves, and seeds contain compounds with antimicrobial, anti-inflammatory, and anthelmintic effects. In traditional medicine, it's used to treat asthma, allergies, and various skin conditions. The bark extract is also used to treat inflammation and as an anthelmintic."
+},
+smoothAgave: {
+name: "Smooth Agave",
+scientific: "Agave desmettiana",
+tamil: "கற்றாழை (Katralai)",
+properties: "Smooth Agave is valued for its medicinal properties. Its leaves and sap contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat wounds, burns, and digestive disorders. The sap is also used as a natural sweetener and has prebiotic properties."
+},
+teakTree: {
+name: "Teak Tree",
+scientific: "Tectona grandis",
+tamil: "தேக்கு (Thekku)",
+properties: "Teak Tree is known for its valuable wood and medicinal properties. Its leaves and bark contain compounds with antimicrobial, anti-inflammatory, and diuretic effects. In traditional medicine, it's used to treat bronchitis, urinary disorders, and various skin conditions. The wood oil is used topically to treat skin diseases."
+},
+whiteFrangipani: {
+name: "White Frangipani",
+scientific: "Plumeria alba",
+tamil: "வெள்ளை அலரி (Vellai Alari)",
+properties: "White Frangipani is valued for its fragrant flowers and medicinal properties. Its flowers, bark, and latex contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat fever, diarrhea, and various skin conditions. The flower extract is also used in aromatherapy for its calming effects."
+},
+wildCrapemyrtle: {
+name: "Wild Crapemyrtle",
+scientific: "Lagerstroemia indica",
+tamil: "மருதாணி (Marudani)",
+properties: "Wild Crapemyrtle is known for its beautiful flowers and medicinal properties. Its bark, leaves, and flowers contain compounds with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat diabetes, diarrhea, and various skin conditions. The leaf extract is also used to treat inflammation and as an antioxidant."
+},
+yellowBells: {
+name: "Yellow Bells",
+scientific: "Tecoma stans",
+tamil: "மஞ்சள் மணி (Manjal Mani)",
+properties: "Yellow Bells is valued for its bright yellow trumpet-shaped flowers and medicinal properties. Its leaves and flowers contain compounds with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat diabetes, digestive disorders, and various infections. The leaf extract has been shown to have antidiabetic properties."
+},
+geraniumLeafArabic: {
+name: "Geranium Leaf Arabic",
+scientific: "Pelargonium graveolens",
+tamil: "ஜெரேனியம் இலை அரபிக் (Jeraniyam Ilai Arabic)",
+properties: "Geranium Leaf Arabic is known for its aromatic leaves and medicinal properties. It contains essential oils with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat anxiety, depression, and various skin conditions. The oil is also known for its ability to balance hormones and improve circulation."
+},
+redGinger: {
+name: "Red Ginger",
+scientific: "Alpinia purpurata",
+tamil: "செவ்விஞ்சி (Sevvinji)",
+properties: "Red Ginger is known for its striking red flower bracts and medicinal properties. It contains compounds with anti-inflammatory and antioxidant effects. In traditional medicine, it's used to aid digestion, reduce inflammation, and treat respiratory conditions. The rhizomes contain gingerols and shogaols that help improve circulation and reduce nausea."
+},
+peaceLily: {
+name: "Peace Lily",
+scientific: "Spathiphyllum",
+tamil: "அமைதி லில்லி (Amaithi Lilly)",
+properties: "Beyond its air-purifying abilities, Peace Lily contains compounds that can reduce airborne microbes. It's known to remove toxins like benzene, formaldehyde, and carbon monoxide from indoor environments. In some traditional practices, extracts from the plant are used to treat inflammation and respiratory issues."
+},
+spiderPlant: {
+name: "Spider Plant",
+scientific: "Chlorophytum comosum",
+tamil: "சிலந்தி செடி (Silanthi Sedi)",
+properties: "A resilient air purifier that removes harmful chemicals like formaldehyde and xylene. Spider plants are also known to reduce stress and improve mental well-being when kept in living spaces. They help maintain optimal humidity levels and are considered beneficial for people with respiratory conditions."
+},
+chineseBanyan: {
+name: "Chinese Banyan",
+scientific: "Ficus microcarpa",
+tamil: "சீன ஆலமரம் (Cheena Alamaram)",
+properties: "Known for its impressive aerial roots, the Chinese Banyan has anti-inflammatory properties. Its bark and leaves are used in traditional medicine to treat skin conditions and reduce fever. The latex from the tree contains compounds that may help in wound healing and treating digestive disorders."
+},
+zebraPlant: {
+name: "Zebra Plant",
+scientific: "Calathea zebrina",
+tamil: "வரிக்குதிரை செடி (Varikuthirai Sedi)",
+properties: "With its striking striped foliage, the Zebra Plant is known for its air-purifying qualities. It helps filter indoor air pollutants and is believed to have a calming effect on its surroundings. In some traditional practices, leaf extracts are used to treat minor skin irritations and inflammation."
+},
+waminBamboo: {
+name: "Wamin Bamboo",
+scientific: "Bambusa vulgaris 'Wamin'",
+tamil: "வாமின் மூங்கில் (Wamin Moongil)",
+properties: "This compact bamboo variety has anti-inflammatory properties. Its shoots are rich in nutrients and fiber, while extracts from its leaves are used in traditional medicine to treat respiratory conditions. The silica content in bamboo is believed to strengthen bones and connective tissues."
+},
+mingArabia: {
+name: "Ming Arabia",
+scientific: "Polyscias fruticosa",
+tamil: "மிங் அரேபியா (Ming Arabia)",
+properties: "This elegant plant has adaptogenic properties that help reduce stress. Its extracts are used in traditional medicine to improve circulation and support respiratory health. The plant contains compounds that may help regulate blood pressure and improve overall vitality."
+},
+birdOfParadise: {
+name: "Bird of Paradise",
+scientific: "Strelitzia reginae",
+tamil: "சொர்க்கப் பறவை (Sorgap Paravai)",
+properties: "With its striking flowers resembling exotic birds, this plant contains compounds with anti-inflammatory properties. In traditional medicine, its flower extracts are used to treat various skin conditions. The seeds contain linoleic acid which may help maintain healthy skin and reduce inflammation."
+},
+ashoka: {
+name: "Ashoka",
+scientific: "Saraca asoca",
+tamil: "அசோகம் (Asogam)",
+properties: "Revered in Ayurvedic medicine, the Ashoka tree has powerful anti-inflammatory and antioxidant properties. Its bark is traditionally used to treat gynecological disorders and has shown effectiveness in managing pain. It contains flavonoids and phenolic compounds that support overall health and well-being."
+},
+asparagus: {
+name: "Asparagus Fern",
+scientific: "Asparagus densiflorus",
+tamil: "தண்ணீர்விட்டான் (Thanneervittan)",
+properties: "Despite its name, the Asparagus Fern is not a true fern but has medicinal properties. Its roots contain steroidal saponins that have anti-inflammatory effects. In traditional medicine, extracts are used to treat urinary tract infections and as a mild diuretic."
+},
+ficusMicrocarpa: {
+name: "Ficus Microcarpa",
+scientific: "Ficus microcarpa",
+tamil: "பூவரசு (Poovarasu)",
+properties: "This ornamental tree has compounds with antimicrobial and anti-inflammatory properties. Its latex is used in traditional medicine to treat skin conditions and wounds. The leaves contain antioxidants that help neutralize free radicals and reduce oxidative stress."
+},
+indianLaurel: {
+name: "Indian Laurel",
+scientific: "Ficus microcarpa",
+tamil: "இந்திய லாரல் (Indhiya Laurel)",
+properties: "Indian Laurel is known for its glossy leaves and medicinal properties. The leaves and bark contain compounds with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat skin conditions, reduce fever, and alleviate digestive issues."
+},
+coconutTree: {
+name: "Coconut Tree",
+scientific: "Cocos nucifera",
+tamil: "தென்னை மரம் (Thennai Maram)",
+properties: "Every part of the coconut tree has medicinal value. Coconut water is rich in electrolytes and has antioxidant properties. The oil contains medium-chain fatty acids with antimicrobial effects. In traditional medicine, various parts are used to treat diabetes, skin conditions, and digestive disorders."
+},
+ixoraTree: {
+name: "Ixora Tree",
+scientific: "Ixora coccinea",
+tamil: "இட்சோரா (Idchora)",
+properties: "Ixora is known for its vibrant flowers and medicinal properties. It contains compounds with anti-inflammatory, antibacterial, and antioxidant effects. In traditional medicine, the flowers and roots are used to treat fever, respiratory infections, and skin conditions."
+},
+kanakambaramTree: {
+name: "Kanakambaram Tree",
+scientific: "Crossandra infundibuliformis",
+tamil: "கனகாம்பரம் (Kanakambaram)",
+properties: "Kanakambaram is valued for its beautiful orange flowers and medicinal properties. The flowers and leaves contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat skin conditions, headaches, and fever."
+},
+peepalTree: {
+name: "Peepal Tree",
+scientific: "Ficus religiosa",
+tamil: "அரசமரம் (Arasamaram)",
+properties: "The sacred Peepal tree has numerous medicinal properties. Its bark, leaves, and fruits contain compounds with anti-inflammatory, antimicrobial, and antidiabetic effects. In traditional medicine, it's used to treat respiratory disorders, skin conditions, and digestive issues."
+},
+dumbCane: {
+name: "Dumb Cane",
+scientific: "Dieffenbachia",
+tamil: "ஊமைக்கொடி (Oomai Kodi)",
+properties: "While toxic if ingested, Dumb Cane has medicinal properties when properly processed. It contains compounds with anti-inflammatory effects. In controlled traditional practices, extracts are used topically to treat arthritis and muscle pain."
+},
+capeJasmine: {
+name: "Cape Jasmine",
+scientific: "Gardenia jasminoides",
+tamil: "கேப் மல்லிகை (Cape Malligai)",
+properties: "Cape Jasmine is known for its fragrant white flowers and medicinal properties. It contains compounds with anti-inflammatory, antioxidant, and neuroprotective effects. In traditional medicine, the flowers and fruits are used to treat inflammation, headaches, and fever."
+},
+monkeyPotTree: {
+name: "Monkey Pot Tree",
+scientific: "Lecythis pisonis",
+tamil: "குரங்கு பானை மரம் (Kurangu Panai Maram)",
+properties: "The Monkey Pot Tree produces unique woody pot-like fruits and has medicinal properties. Its bark and seeds contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat digestive disorders and skin conditions."
+},
+cigarBoxCedar: {
+name: "Cigar-Box-Cedar",
+scientific: "Cedrela odorata",
+tamil: "சுருட்டுப் பெட்டி தேவதாரு (Suruttu Petti Devadaru)",
+properties: "Cigar-Box-Cedar is valued for its aromatic wood and medicinal properties. The bark and leaves contain compounds with antimicrobial and anti-inflammatory effects. In traditional medicine, it's used to treat fever, respiratory infections, and digestive disorders."
+},
+mango: {
+name: "Mango",
+scientific: "Mangifera indica",
+tamil: "மாம்பழம் (Mampazham)",
+properties: "Beyond its delicious fruit, the mango tree has numerous medicinal properties. The leaves, bark, and kernel contain compounds with antioxidant, anti-inflammatory, and antimicrobial effects. In traditional medicine, various parts are used to treat diabetes, digestive disorders, and respiratory conditions."
+},
+weepingFig: {
+name: "Weeping Fig",
+scientific: "Ficus benjamina",
+tamil: "அழுகை அத்தி (Azhukai Athi)",
+properties: "The Weeping Fig is known for its air-purifying abilities and medicinal properties. Its leaves and bark contain compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat respiratory conditions and skin disorders."
+},
+bushPentas: {
+name: "Bush Pentas",
+scientific: "Pentas lanceolata",
+tamil: "பெண்டாஸ் புதர் (Pentas Puthar)",
+properties: "Bush Pentas is valued for its colorful star-shaped flowers and medicinal properties. It contains compounds with anti-inflammatory and antioxidant effects. In traditional medicine, the leaves are used to treat digestive disorders and skin conditions."
+},
+purpleAllamanda: {
+name: "Purple Allamanda",
+scientific: "Allamanda blanchetii",
+tamil: "ஊதா அல்லமாண்டா (Oothaa Allamanda)",
+properties: "Purple Allamanda is known for its trumpet-shaped flowers and medicinal properties. It contains compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, it's used to treat fever, malaria, and digestive disorders."
+},
+crimsonBottlebrush: {
+name: "Crimson Bottlebrush",
+scientific: "Callistemon citrinus",
+tamil: "சிவப்பு பாட்டில் தூரிகை (Sivappu Bottle Thoorikai)",
+properties: "Crimson Bottlebrush is valued for its distinctive red flower spikes and medicinal properties. It contains essential oils with antimicrobial and anti-inflammatory effects. In traditional medicine, the leaves are used to treat respiratory conditions and skin disorders."
+},
+goldenShower: {
+name: "Golden Shower",
+scientific: "Cassia fistula",
+tamil: "கொன்றை (Konrai)",
+properties: "Golden Shower is known for its cascading yellow flowers and medicinal properties. Its bark, leaves, and fruits contain compounds with anti-inflammatory, antimicrobial, and laxative effects. In traditional medicine, it's used to treat skin conditions, digestive disorders, and respiratory infections."
+},
+gingerTree: {
+name: "Ginger Tree",
+scientific: "Zingiber officinale",
+tamil: "இஞ்சி மரம் (Inji Maram)",
+properties: "The Ginger Tree is valued for its aromatic rhizomes and medicinal properties. It contains gingerols and shogaols with anti-inflammatory, antimicrobial, and antiemetic effects. In traditional medicine, it's used to treat digestive disorders, respiratory conditions, and inflammation."
+},
+yucca: {
+name: "Yucca",
+scientific: "Yucca filamentosa",
+tamil: "யுக்கா (Yucca)",
+properties: "Yucca is known for its sword-like leaves and medicinal properties. It contains saponins and resveratrol with anti-inflammatory and antioxidant effects. In traditional medicine, the roots are used to treat arthritis, inflammation, and digestive disorders."
+},
+rholo: {
+name: "Rholo",
+scientific: "Tradescantia spathacea",
+tamil: "ரோலோ (Rholo)",
+properties: "Rholo, also known as Moses-in-the-Cradle, has distinctive purple and green leaves with medicinal properties. It contains compounds with anti-inflammatory and antimicrobial effects. In traditional medicine, the leaves are used to treat skin conditions and respiratory disorders."
+},
+coleus: {
+name: "Coleus",
+scientific: "Plectranthus scutellarioides",
+tamil: "கோலியஸ் (Coleus)",
+properties: "Coleus is valued for its colorful foliage and medicinal properties. It contains compounds with anti-inflammatory, antioxidant, and antimicrobial effects. In traditional medicine, the leaves are used to treat digestive disorders, respiratory conditions, and skin ailments."
+}
+};
+document.addEventListener('DOMContentLoaded', function() {
+const modal = document.getElementById('plant-modal');
+const modalContent = document.getElementById('modal-content');
+const closeModal = document.getElementById('close-modal');
+const modalOverlay = document.getElementById('modal-overlay');
+const plantCards = document.querySelectorAll('.plant-card');
+const searchInput = document.getElementById('search-input');
+// Function to open modal with plant details
+function openPlantModal(plantId) {
+const plant = plantData[plantId];
+if (!plant) return;
+modalContent.innerHTML = `
+<h2 class="text-3xl font-bold mb-4 neon-glow">${plant.name}</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+<div>
+<p class="text-gray-300 mb-1"><span class="text-primary font-bold">Scientific Name:</span> ${plant.scientific}</p>
+<p class="text-gray-300"><span class="text-primary font-bold">Tamil Name:</span> ${plant.tamil}</p>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-2 text-primary">Medicinal Properties</h3>
+<p class="text-gray-300">${plant.properties}</p>
+</div>
+`;
+modal.classList.add('active');
+document.body.style.overflow = 'hidden';
+}
+// Function to close modal
+function closeModalFunc() {
+modal.classList.remove('active');
+document.body.style.overflow = '';
+}
+// Add click event to plant cards
+plantCards.forEach(card => {
+card.addEventListener('click', () => {
+const plantId = card.getAttribute('data-plant');
+openPlantModal(plantId);
+});
+});
+// Close modal when clicking close button or overlay
+closeModal.addEventListener('click', closeModalFunc);
+modalOverlay.addEventListener('click', closeModalFunc);
+// Search functionality
+searchInput.addEventListener('input', function() {
+const searchTerm = this.value.toLowerCase();
+const plantsGrid = document.getElementById('plants-grid');
+const cards = plantsGrid.querySelectorAll('.plant-card');
+cards.forEach(card => {
+const plantId = card.getAttribute('data-plant');
+const plant = plantData[plantId];
+const plantName = plant.name.toLowerCase();
+const scientificName = plant.scientific.toLowerCase();
+const tamilName = plant.tamil.toLowerCase();
+if (plantName.includes(searchTerm) ||
+scientificName.includes(searchTerm) ||
+tamilName.includes(searchTerm)) {
+card.style.display = '';
+} else {
+card.style.display = 'none';
+}
+});
+});
+});
+</script>
+<script id="smooth-scroll-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 80, // Adjust for navbar height
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+</body>
+</html>
